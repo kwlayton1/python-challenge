@@ -6,7 +6,7 @@ import os
 # Module for read/write CSV files
 import csv
 
-file_path = r"C:\Users\kwlay\python-challenge\PyBank\Resources\budget_data.csv"
+file_path = '../Resources/budget_data.csv'
 
 # lists to store data
 Date = []
@@ -35,18 +35,10 @@ with open(file_path) as csvfile:
 
 print(Date)
 print("Financial Analysis  Total Months: " + str(len(Date)))
-print("Total: $" + (sum(Profit_Loss[0]-[86])))
+print(f"Total: $" + (sum(Profit_Loss[0]-[86])))
 
 
-
-
-       
-              
-              
-              
-   
-             
-
+ 
 # function that returns the arithmetic average for a list of numbers
 #def average(numbers):
  #   length = len(numbers)
